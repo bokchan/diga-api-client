@@ -5,6 +5,8 @@ _**Updated: 01/06/2021**_
 Check here to see if the library is known to be working or not against each DiGA endpoint,
 together with information on how many companies are using each endpoint, and issue tracking if the endpoint is not working:
 
+## Endpoints
+
 | Status                 | Description                                                                                            |
 | ---------------------- | ------------------------------------------------------------------------------------------------------ |
 | **Prescription codes** |                                                                                                        |
@@ -20,18 +22,31 @@ together with information on how many companies are using each endpoint, and iss
 | `BILLING NOT VERIFIED` | billing probably works, but it has not been verified with a real bill yet                              |
 | `BILLING NOT OK`       | billing does not work                                                                                  |
 
-## Endpoints
+### Prescription codes
 
-| Endpoint                            | #   | Prescription API status             | Billing API status                        |
-| ----------------------------------- | --- | ----------------------------------- | ----------------------------------------- |
-| diga.bitmarck-daten.de              | 86  | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
-| diga-api.tk.de/diga/api/public/rest | 1   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
-| da-api.gkvi.de                      | 5   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
-| diga.kkh.de                         | 1   | `CODE TEST OK`, `CODE NOT VERIFIED` |                                           |
-| itscare.da-api.aok.de               | 3   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
-| kubus-it.da-api.aok.de              | 2   | `CODE TEST OK`, `CODE NOT VERIFIED` | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
-| arge.da-api.aok.de                  | 3   | `CODE TEST NOT OK`, `CODE NOT OK`   | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
-| diga.apimisc.de                     | 3   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST NOT OK`, `BILLING OK`       |
+| Endpoint                            | #   | `CODE TEST OK` | `CODE TEST NOT OK` | `CODE OK` | `CODE NOT VERIFIED` | `CODE NOT OK` |
+| ----------------------------------- | --- | --------- | ------------- | --------- | ------------------- | ------------- |
+| diga.bitmarck-daten.de              | 86  | x         |               | x         |                     |               |
+| diga-api.tk.de/diga/api/public/rest | 1   | x         |               | x         |                     |               |
+| da-api.gkvi.de                      | 5   | x         |               | x         |                     |               |
+| diga.kkh.de                         | 1   | x         |               |           | x                   |               |
+| itscare.da-api.aok.de               | 3   | x         |               | x         |                     |               |
+| kubus-it.da-api.aok.de              | 2   | x         |               |           | x                   |               |
+| arge.da-api.aok.de                  | 3   |           | x             |           |                     | x             |
+| diga.apimisc.de                     | 3   | x         |               | x         |                     |               |
+
+### Billing
+
+| Endpoint                            | #   | `BILLING TEST OK` | `BILLING TEST NOT OK` | `BILLING OK` | `BILLING NOT VERIFIED` | `BILLING NOT OK` |
+| ----------------------------------- | --- | ----------------- | --------------------- | ------------ | ---------------------- | ---------------- |
+| diga.bitmarck-daten.de              | 86  | x                 |                       | x            |                        |                  |
+| diga-api.tk.de/diga/api/public/rest | 1   | x                 |                       | x            |                        |                  |
+| da-api.gkvi.de                      | 5   | x                 |                       | x            |                        |                  |
+| diga.kkh.de                         | 1   |                   |                       |              |                        |                  |
+| itscare.da-api.aok.de               | 3   | x                 |                       |              | x                      |                  |
+| kubus-it.da-api.aok.de              | 2   | x                 |                       |              | x                      |                  |
+| arge.da-api.aok.de                  | 3   |                   | x                     |              | x                      |                  |
+| diga.apimisc.de                     | 3   |                   | x                     | x            |                        |                  |
 
 ## Summary
 
