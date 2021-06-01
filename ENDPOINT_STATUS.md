@@ -10,43 +10,45 @@ together with information on how many companies are using each endpoint, and iss
 | Status                 | Description                                                                                            |
 | ---------------------- | ------------------------------------------------------------------------------------------------------ |
 | **Prescription codes** |                                                                                                        |
-| `CODE TEST OK`         | test codes are working                                                                                 |
-| `CODE TEST NOT OK`     | test codes are not working                                                                             |
-| `CODE OK`              | real code validation has been attempted and verified to work                                           |
-| `CODE NOT VERIFIED`    | real code validation probably works but it has not been tested on a real code yet                      |
-| `CODE NOT OK`          | real code validation does not work                                                                     |
+| `TEST OK`              | test codes are working                                                                                 |
+| `TEST NOT OK`          | test codes are not working                                                                             |
+| `OK`                   | real code validation has been attempted and verified to work                                           |
+| `NOT VERIFIED`         | real code validation probably works but it has not been tested on a real code yet                      |
+| `NOT OK`               | real code validation does not work                                                                     |
 | **Billing**            |                                                                                                        |
-| `BILLING TEST OK`      | test bill is working (the APIs don't support this completely, but as far as you can get it is working) |
-| `BILLING TEST NOT OK`  | test bill is not working                                                                               |
-| `BILLING OK`           | billing has been attempted and verified to work                                                        |
-| `BILLING NOT VERIFIED` | billing probably works, but it has not been verified with a real bill yet                              |
-| `BILLING NOT OK`       | billing does not work                                                                                  |
+| `TEST OK`              | test bill is working (the APIs don't support this completely, but as far as you can get it is working) |
+| `TEST NOT OK`          | test bill is not working                                                                               |
+| `OK`                   | billing has been attempted and verified to work                                                        |
+| `NOT VERIFIED`         | billing probably works, but it has not been verified with a real bill yet                              |
+| `NOT OK`               | billing does not work                                                                                  |
 
+The `#` column denotes the number of companies providing the endpoint
 ### Prescription codes
 
-| Endpoint                            | #   | `CODE TEST OK` | `CODE TEST NOT OK` | `CODE OK` | `CODE NOT VERIFIED` | `CODE NOT OK` |
-| ----------------------------------- | --- | --------- | ------------- | --------- | ------------------- | ------------- |
-| diga.bitmarck-daten.de              | 86  | x         |               | x         |                     |               |
-| diga-api.tk.de/diga/api/public/rest | 1   | x         |               | x         |                     |               |
-| da-api.gkvi.de                      | 5   | x         |               | x         |                     |               |
-| diga.kkh.de                         | 1   | x         |               |           | x                   |               |
-| itscare.da-api.aok.de               | 3   | x         |               | x         |                     |               |
-| kubus-it.da-api.aok.de              | 2   | x         |               |           | x                   |               |
-| arge.da-api.aok.de                  | 3   |           | x             |           |                     | x             |
-| diga.apimisc.de                     | 3   | x         |               | x         |                     |               |
+| Endpoint                            | #   | `TEST OK` | `TEST NOT OK` | `OK` | `NOT VERIFIED` | `NOT OK` |
+| ----------------------------------- | --- | --------- | ------------- | ---- | -------------- | -------- |
+| diga.bitmarck-daten.de              | 86  | x         |               | x    |                |          |
+| diga-api.tk.de/diga/api/public/rest | 1   | x         |               | x    |                |          |
+| da-api.gkvi.de                      | 5   | x         |               | x    |                |          |
+| diga.kkh.de                         | 1   | x         |               |      | x              |          |
+| itscare.da-api.aok.de               | 3   | x         |               | x    |                |          |
+| kubus-it.da-api.aok.de              | 2   | x         |               |      | x              |          |
+| arge.da-api.aok.de                  | 3   |           | x             |      |                | x        |
+| diga.apimisc.de                     | 3   | x         |               | x    |                |          |
 
 ### Billing
 
-| Endpoint                            | #   | `BILLING TEST OK` | `BILLING TEST NOT OK` | `BILLING OK` | `BILLING NOT VERIFIED` | `BILLING NOT OK` |
-| ----------------------------------- | --- | ----------------- | --------------------- | ------------ | ---------------------- | ---------------- |
-| diga.bitmarck-daten.de              | 86  | x                 |                       | x            |                        |                  |
-| diga-api.tk.de/diga/api/public/rest | 1   | x                 |                       | x            |                        |                  |
-| da-api.gkvi.de                      | 5   | x                 |                       | x            |                        |                  |
-| diga.kkh.de                         | 1   |                   |                       |              |                        |                  |
-| itscare.da-api.aok.de               | 3   | x                 |                       |              | x                      |                  |
-| kubus-it.da-api.aok.de              | 2   | x                 |                       |              | x                      |                  |
-| arge.da-api.aok.de                  | 3   |                   | x                     |              | x                      |                  |
-| diga.apimisc.de                     | 3   |                   | x                     | x            |                        |                  |
+| Endpoint                            | #   | `TEST OK` | `TEST NOT OK` | `OK` | `NOT VERIFIED` | `NOT OK` |
+| ----------------------------------- | --- | --------- | ------------- | ---- | -------------- | -------- |
+| diga.bitmarck-daten.de              | 86  | x         |               | x    |                |          |
+| diga-api.tk.de/diga/api/public/rest | 1   | x         |               | x    |                |          |
+| da-api.gkvi.de                      | 5   | x         |               | x    |                |          |
+| diga.kkh.de                         | 1   |           |               |      |                |          |
+| itscare.da-api.aok.de               | 3   | x         |               |      | x              |          |
+| kubus-it.da-api.aok.de              | 2   | x         |               |      | x              |          |
+| arge.da-api.aok.de                  | 3   |           | x             |      | x              |          |
+| diga.apimisc.de                     | 3   |           | x             | x    |                |          |
+
 
 ## Summary
 
