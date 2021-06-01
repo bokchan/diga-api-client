@@ -22,16 +22,16 @@ together with information on how many companies are using each endpoint, and iss
 
 ## Endpoints
 
-| Endpoint                            | Usage        | Prescription API status             | Billing API status                        |
-| ----------------------------------- | ------------ | ----------------------------------- | ----------------------------------------- |
-| diga.bitmarck-daten.de              | 86 companies | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
-| diga-api.tk.de/diga/api/public/rest | 1 company    | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
-| da-api.gkvi.de                      | 5 companies  | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
-| diga.kkh.de                         | 1 company    | `CODE TEST OK`, `CODE NOT VERIFIED` |                                           |
-| itscare.da-api.aok.de               | 3 companies  | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
-| kubus-it.da-api.aok.de              | 2 companies  | `CODE TEST OK`, `CODE NOT VERIFIED` | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
-| arge.da-api.aok.de                  | 3 companies  | `CODE TEST NOT OK`, `CODE NOT OK`   | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
-| diga.apimisc.de                     | 3 companies  | `CODE TEST OK`, `CODE OK`           | `BILLING TEST NOT OK`, `BILLING OK`       |
+| Endpoint                            | #   | Prescription API status             | Billing API status                        |
+| ----------------------------------- | --- | ----------------------------------- | ----------------------------------------- |
+| diga.bitmarck-daten.de              | 86  | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
+| diga-api.tk.de/diga/api/public/rest | 1   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
+| da-api.gkvi.de                      | 5   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING OK`           |
+| diga.kkh.de                         | 1   | `CODE TEST OK`, `CODE NOT VERIFIED` |                                           |
+| itscare.da-api.aok.de               | 3   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
+| kubus-it.da-api.aok.de              | 2   | `CODE TEST OK`, `CODE NOT VERIFIED` | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
+| arge.da-api.aok.de                  | 3   | `CODE TEST NOT OK`, `CODE NOT OK`   | `BILLING TEST OK`, `BILLING NOT VERIFIED` |
+| diga.apimisc.de                     | 3   | `CODE TEST OK`, `CODE OK`           | `BILLING TEST NOT OK`, `BILLING OK`       |
 
 ## Summary
 
@@ -39,7 +39,7 @@ Endpoints covering 97/103 insurance companies are working with test code validat
 
 Endpoints covering 98/103 insurance companies are working with test invoice requests.
 
-However, since this library is not used in production yet, we can not verify if __real__ requests work or not.
+However, since this library is not used in production yet, we can not verify if **real** requests work or not.
 We will update this as we find out. If you are using this library in production, and you find out that a request to
 one of the un-verified endpoints works, please either send us a message or add a pull request updating this file.
 If you find out it doesn't work, [create an Issue](https://github.com/alex-therapeutics/diga-api-client/issues/new/choose)!
