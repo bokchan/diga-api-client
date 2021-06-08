@@ -2,10 +2,7 @@ version: '3'
 
 services:
   diga-api-client:
-    # image: adoptopenjdk:11-jdk
-    build:
-        dockerfile: Dockerfile
-        context: ./
+    image: maven:3-jdk-11-slim
     container_name: diga-api-client
     volumes:
       - ./:/app/
